@@ -13,7 +13,7 @@ def transfer(str_):
 def getname_act():
     flag = True
     data = {}
-    with open(os_path+'actor_roles.txt','r', encoding='utf-8') as lines:
+    with open(os_path+'actor_roles.txt', 'r') as lines:
         for line in lines:
             if flag:
                 flag = False
