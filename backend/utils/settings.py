@@ -9,7 +9,7 @@ import json
 import collections
 import numpy as np
 import random
-import gentext
+import utils.gentext
 import re
 
 import math
