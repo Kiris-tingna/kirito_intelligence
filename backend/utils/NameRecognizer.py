@@ -2,7 +2,7 @@
 '''
 @ Author: Tinkle G
 '''
-from settings import *
+from utils.settings import *
 
 def transfer(str_):
     str_ = ' '.join(str_.split('、'))
