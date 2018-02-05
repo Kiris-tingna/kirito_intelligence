@@ -13,7 +13,7 @@ def transfer(str_):
 def getname_act():
     flag = True
     data = {}
-    with open(os_path+'actor_roles.txt','r') as lines:
+    with open(os_path+'actor_roles.txt','r', encoding='utf-8') as lines:
         for line in lines:
             if flag:
                 flag = False
@@ -37,6 +37,6 @@ def getname_act():
                         ret.extend(transfer(line.split('|')[4]).split())
                     if line.split('|')[5] != '无':
                         ret.append(line.split('|')[5].strip())
-                    data[name.decode('utf8')]=ret#[ix.decode('utf8') for ix in ret]
+                    data[name]=ret#[ix.decode('utf8') for ix in ret]
     return data
 name_recognizer = getname_act()
