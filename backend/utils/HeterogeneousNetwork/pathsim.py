@@ -103,4 +103,4 @@ if __name__ == '__main__':
     # end = time.time()
     # print("Time:generate MP matrix:{}s \t PathSim:{}s".format(round(mid - start, 4), round(end - mid, 4)))
     acname = querys[10]
-    print SimiliarActor(acname)
+    # print SimiliarActor(acname)

@@ -11,6 +11,6 @@ urllib3==1.22
 web.py==0.40.dev0
 h5py
 tensorflow
-keras
+keras==2.0.3
 jieba
 gensim
