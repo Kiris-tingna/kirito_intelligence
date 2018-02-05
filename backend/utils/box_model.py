@@ -410,7 +410,6 @@ class BOX_Model(object):
             tmp['name']=moviename
             tmp['value']=self.get_contribute(moviename)
             ret.append(tmp)
-        print ret
         return json.dumps(ret, indent=4)
 
     def get_contribute(self,moviename):

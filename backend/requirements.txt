@@ -8,7 +8,7 @@ scikit-learn==0.19.0
 scipy==0.19.1
 six==1.10.0
 urllib3==1.22
-web.py==0.38
+web.py==0.40.dev0
 h5py
 tensorflow
 keras
