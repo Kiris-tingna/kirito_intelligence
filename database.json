@@ -1,0 +1,8 @@
+{
+    "defaultEnv": "mongo",
+    "mongo": {
+        "driver": "mongodb",
+        "database": "FKAP",
+        "host": "192.168.1.133"
+    }
+}

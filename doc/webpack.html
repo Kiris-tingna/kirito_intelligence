@@ -1,0 +1,2046 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>webpack</title></head><body><article class="markdown-body"><p>webpack 从入门到工程实践</p>
+<p>作者/分享人：zhangwang<br />
+本文较长，为了节省你的阅读时间，在文前列写作思路如下：</p>
+<p>什么是webpack，它要解决的是什么问题？<br />
+对webpack的主要配置项进行分析，虽然不会涉及太多细节，但是期待在本节能让我们知晓如果我们有什么需求，我们该从哪些配置项着手修改？<br />
+分析create-react-app的基础配置文件。<br />
+分享一些自己工作中对webpack的实践。<br />
+本文的初衷是和你一起理清webpack的使用逻辑，以便能更加容易的编写及拓展自己项目所需的配置文件。不过也得提前说明本文可能并不是一篇好的可以跟着操作的教程（想跟着一步步做的童鞋可以看官方示例和webpack入门，看这篇就够了。</p>
+<p>换个角度看待webpack</p>
+<p>近年来，前端技术蓬勃发展，我们想在js更方便的实现html , 社区就出现了jsx,我们觉得原生的css不够好用，社区就提出了scss,less，针对前端项目越来越强的模块化开发需求，社区出现了AMD,CommonJS,ES2015 import等等方案。遗憾的是，这些方案大多并不直接被浏览器支持，往往伴随这些方案而生的还有另外一些，让这些新技术应用于浏览器的方案，我们用babel来转换下一代的js，转换jsx;我们用各种工具转换scss,less为css；我们发现项目越来越复杂，代码体积越来越大，又要开始寻找各种优化，压缩，分割方案。前端工程化这个过程，真是让我们大费精力。我们也大多是在寻找前端模块化解决方案的过程中知晓了webpack。</p>
+<p>的确，webpack的流行得益于野性生长的前端，其本质是一种前端模块化打包解决方案，但是更重要的是它又是一个可以融合运用各种前端新技术的平台，明白webpack的使用哲学后，只需要简单的配置,我们就可以随心所欲的在webpack项目中使用jsx/ts,使用babel/postcss等平台提供的众多其它功能，只需通过一条命令由源码构建最终可用文件。可以不夸张的说webpack为前端的工程化开发提供了一套相对容易和完整的解决方案。一些知名的脚手架工具，也大多基于webpack(比如create-react-app)。</p>
+<p>webpack好难！我第一次复制别人的配置文件到我的项目中，发现以自己仅有的JS知识完全看不懂时，也有这种感觉。后来发现有这种感觉其实是因为自己看待webpack的角度错了，对大多数前端开发者而言，以往我们接触的各种库，要么类似jQuery,通过$符在前端项目中直接运行，所做的事情只在前端生效，要么类似express.js,在node.js项目中直接require后就可以使用，所做的事情只在后端生效。webpack的不同之处就在于，虽然我们的配置文件位于前端项目中，但实际上它却运行于node.js，之后的处理结果又供前端使用（也可能供node使用）。所以学习之前，我们转变一下思维，从node.js的角度来看webpack，很多事情就会简单起来。</p>
+<p>我们对下图一定不陌生，假设现在我们手中有一系列相互关联的文件js,jsx,css,less,jpg，我们一步步的看看为了把它们转换为项目最终需要的，浏览器可识别的文件，webpack都做了什么。</p>
+<p>webpack做了什么</p>
+<p>对webpack主要配置项的分析</p>
+<p>如果不去考究细节，我们大可把webpack简化理解为一个函数，配置文件则是其参数，传入合理的参数后，运行函数就能得到我们想要的结果。</p>
+<p>webpack也只是一个打包工具，它可不是什么智能ai，我们该从哪儿输入文件，我们想把输出结果放哪里，输出结果应该长什么样，它都不知道。而我们目前和webpack函数交互的唯一方法就是通过参数，这就涉及到webpack配置对象中两个重要概念entry和output了，因此，我们的配置对象至少具备以下结构：</p>
+<p>// 第一阶段<br />
+{<br />
+    entry:{},<br />
+    output:{}<br />
+}<br />
+入口配置entry</p>
+<p>理想状态是，我们把所有自己编写的文件都交给webpack,让它找明里面的关系，进过一定处理后，给出最终我们想要的结果。遗憾的是，webpack也不会机械学习，我们手头的一堆文件之间的关系是自己确定的，一般我们的项目都会存在一个或几个主文件，其它的所有的文件（模块）都直接或间接的链接到了这些文件。我们在entry项中需要填写的就是这些主文件的信息。</p>
+<p>不过我们也不要嫌弃webpack笨，通过我们给的主文件路径，通过分析它能构建最合适的依赖关系，这意味着只有用过的代码才会被打包，比如我们在一个文件中写了五个模块，但是实际只用了其中一个，打包后的代码只会包含引用过的模块。</p>
+<p>webpack中很多地方的配置都有多种写法，这也是其让人疑惑的地方之一，很遗憾，我们的第一个配置对象entry就是如此。</p>
+<p>entry可以是三种值：</p>
+<p>字符串:如entry:&rsquo;./src/index.js&rsquo;，字符串也可以是函数的返回值，如entry: () =&gt; &lsquo;./demo&rsquo;，单一入口占位符<a href="代表打包后文件的名称，在entry或代码中(之后会看到)确定；">name</a>值为main（关于占位符，稍后详述）；</p>
+<p>数组形式，如[react,react-dom]，可以把数组中的多个文件打包转换为一个chunk；</p>
+<p>对象形式，如果我们需要配置的是多页应用，或者我们要抽离出指定的模块做为公共代码，就需要采用这种形式了，属性名是占位符<a href="代表打包后文件的名称，在entry或代码中(之后会看到)确定；">name</a>的值，属性值可以是上面的字符串和数组，如下:</p>
+<p>// 值得注意的是入口文件有几个就会生成几个独立的依赖图谱。<br />
+entry:{<br />
+    main:&rsquo;./src/index.js&rsquo;,<br />
+    second:&rsquo;./src/index2.js&rsquo;,<br />
+    vendor: [&lsquo;react&rsquo;,&rsquo;react-dom&rsquo;]<br />
+}<br />
+好吧，千辛万苦，我们在一堆各种类型的文件中找到了入口文件，这里我们假设为./src/index.js，此时我们的配置对象如下：</p>
+<p>// 第二阶段<br />
+{<br />
+    entry:{<br />
+        main:&rsquo;./src/index.js&rsquo;<br />
+    },<br />
+    output:{}<br />
+}<br />
+webpack依据入口文件来构建依赖体系，每个入口文件在打包完成后都具备其独立的依赖图谱，在此我们暂时称这些由主入口配置生成的文件为主js文件。<br />
+输出配置output</p>
+<p>output配置项作用于打包文件的输出阶段，其作用在于告知webpack以何种方式输出打包文件，关于output，webpack提供了众多的可配置选项，我们简单介绍下最常用的选项。</p>
+<p>output基本配置项</p>
+<p>我们都另存过文件，当我们另存一个文件时，我们需要确定另存的文件名和另存的路径，webpack将打包后的结果导出的过程就类似于此，此过程由output配置项控制，其最基本配置包括filename和path两项。这两项用以决定上述主js文件的存储行为。</p>
+<p>不过我们程序的首页往往不需用到某个主js文件的所有代码，实际开发中，我们常常使用一定方法对代码进行分割，方便按需加载，提升体验。这类不具备独立依赖的文件，我们称之为chunkfile。chunkfile的命名，在output中对应chunkFilename项；</p>
+<p>此外output的publicPath项，用于控制打包文件的相对或者绝对引用路径，配置不当往往造成在运行时找不到文件。</p>
+<p>我们补充配置对象中output的配置，如下：<br />
+<pre><code>// 第三阶段
+{
+    entry:{
+        main:'./src/index.js'
+    },
+    output:{
+        path: path.join(__dirname,'./dist'),
+        name:'js/bundle-[name]-[hash].js',
+        chunkFilename:'js/[name].chunk.js',
+        publicPath:'/dist/'
+    }
+}
+</code></pre><br />
+上述代码中用到了占位符<a href="代表打包后文件的名称，在entry或代码中(之后会看到)确定；">name</a>，我们对占位符做统一解释：</p>
+<p>webpack中常见的占位符有多种，常见的如下：</p>
+<p>[id]:webpack给块分配的内部chunk id，如果你没有隐藏，你能在打包后的命令行中看到；<br />
+[hash]：每次构建过程中，生成的唯一 hash 值;<br />
+[chunkhash]: 依据于打包生成文件内容的 hash 值,内容不变，值不变；<br />
+output其它配置</p>
+<p>output配置项生效于保存这个过程，除了上面的基本配置，如果你想对这个阶段的打包文件进行更改，都可在此配置项中进行相关设置。</p>
+<p>比如output提供了众多关于hash的属性，让我们对[hash]占位符的值有更加精细的控制，如生成方式，使用的算法，预设的长度等等；如chunkLoadTimeout属性则允许我们设置chunk文件的请求超时时间。</p>
+<p>工具都是依赖于需求来使用的，如果你此阶段有别的需求，可点击更多配置寻找解决方案。</p>
+<p>我们已经知道了webpack中基本的输入和输出配置，但是webpack对各模块的处理过程，目前为止，对我们还是一个谜。考虑到webpack执行于node.js环境，其本身只能理解js文件，而我们输入的却是一大堆不同格式的文件，毫无疑问,要做的第一件事情是对各类模块进行处理，这就涉及到webpack中第三个重要配置对象了&mdash;module。</p>
+<p>对模块的处理：module的配置</p>
+<p>使用webpack时，我们常常听说，对webpack而言，所有的文件都是模块，前文中我也常常混用模块和文件，不过本质上模块和文件还是不同的，webpack里，文件可以当做模块，而模块却不一定是一个独立的文件。我们先看看webpack内置支持的模块类型：</p>
+<p>ES2015 import（webpack2开始内置支持）。</p>
+<p>CommonJS require。</p>
+<p>AMD define和require语句。</p>
+<p>css/less/sass 中的@import。</p>
+<p>样式中的url(&hellip;)和html文件中的<img src="///G://Kiristingna/..."/>。</p>
+<p>我们知道webpack只能处理js文件，我们的浏览器也可能不支持一些最新的js语法，基于此，我们需要对传入的模块进行一定的预处理，这就涉及到webpack的又一核心概念 &mdash; loader，使用loader，webpack允许我们打包任何JS之外的静态资源。</p>
+<p>loader的作用和基本用法</p>
+<p>webpack中，loader的配置主要在module.rules中进行，module.rules是一个数组，我们可以把每一项看做一个Rule，每个Rule主要做了以下两件事：</p>
+<p>识别文件类型，以确定具体处理该数据的loader，（Rule.test属性）。</p>
+<p>使用相关loader对文件进行相应的操作转换，（Rule.use属性）。</p>
+<p>还记得前面我们说过，我们手头的文件类型有js,jsx,css,less,jpg吗？我们看看在webpack中该如何处理和转换它们。</p>
+<p>注：以下loader使用前需通过npm/cnpm/yarn安装：<br />
+<pre><code>module: {
+   rules: [{
+       test: /(\.jsx|\.js)$/,
+       use: {
+           loader: &quot;babel-loader&quot;,
+           options: {
+               presets: [&quot;es2015&quot;, &quot;react&quot;]
+           }
+       },
+       exclude: /node_modules/
+   }, {
+       test: /\.css$/,
+       use: [&quot;style-loader&quot;, &quot;css-loader&quot;]
+   }, {
+       test: /\.less$/,
+       use: [&quot;style-loader&quot;, &quot;css-loader&quot;, &quot;less-loader&quot;]
+   }]
+},
+</code></pre><br />
+这就是webpack中loader的基本用法了，在module.rules数组中进行配置即可，module.rules是一个数组，里面每一项（一个Rule）表示以一定的规则匹配和处理某种或某几种类型的文件。具体说来：</p>
+<p>Rule.test:表示匹配规则，它是一个正则表达式。</p>
+<p>Rule.use:表示针对匹配的文件将使用的处理loader，其值可以是字符串，数组和对象，当是对象形式时，我们可以使用options等命令进行进一步的配置。</p>
+<p>Rule中的其它一些规则也大多围绕匹配条件和应用结果展开，如Rule.exclude和Rule.include表示应该匹配或不应该匹配某资源；Rule.oneOf表示对该资源只应用第一个匹配的loader；Rule.enforce则用于指定loader的种类。</p>
+<p>loader可以做什么</p>
+<p>webpack的强大之处在于，可以轻松在其中应用其它平台提供的功能，比如说babel,postcss本身都是独立的平台。在webpack中只需要添加babel-loader和postcss-loader就可以使用。这两个平台本身也提供众多的配置项，默认分别可在.babelrc 和postcss.config.js中完成，webpack并不影响这些配置文件的使用。不过需要说明的可能很多童鞋是在学习webpack时才接触这两个平台，导致在这两个平台上遇到的问题误以为是webpack的问题。<br />
+除了上述的转换编译，通过loader，webpack还允许我们实现以下功能：</p>
+<p>转换编译：script-loader/babel-loader/ts-loader/coffee-loader等。</p>
+<p>处理样式：style-loader/css-loader/less-loader/sass-loader/postcss-loader等。</p>
+<p>处理文件：raw-loader/url-loader/file-loader/等。</p>
+<p>处理数据：csv-loader/xml-loader等。</p>
+<p>处理模板语言：html-loader/pug-loader/jade-loader/markdown-loader等。</p>
+<p>清理和测试：mocha-loader/eslint-loader等。</p>
+<p>关于各个loader更详细的介绍，可点击loaders查看。</p>
+<p>module.noParse</p>
+<p>关于module，另一个常用的配置项为module.noParse，通过它，我们在构建过程中可以忽略大型的 library 以提高构建效率。</p>
+<p>我们来整理一下此阶段，我们的配置对象代码，如下：<br />
+<pre><code>// 第四阶段
+{
+    entry: {
+        main: './src/index.js'
+    },
+    output: {
+        path: path.join(__dirname, './dist'),
+        name: 'js/bundle-[name].js',
+        chunkFilename: 'js/[name].chunk.js',
+        publicPath: '/dist/'
+    },
+    module: {
+        rules: [{
+            test: /(\.jsx|\.js)$/,
+            use: {
+                loader: &quot;babel-loader&quot;,
+                options: {
+                    presets: [&quot;es2015&quot;, &quot;react&quot;]
+                }
+            },
+            exclude: /node_modules/
+        }, {
+            test: /\.css$/,
+            use: [&quot;style-loader&quot;, &quot;css-loader&quot;]
+        }, {
+            test: /\.less$/,
+            use: [&quot;style-loader&quot;, &quot;css-loader&quot;, &quot;less-loader&quot;]
+        }]
+    }
+}
+</code></pre><br />
+进过这一阶段的处理，我们的代码其实已经可以输出使用了。不过这样的输出可能还不能让人满意，我们想要抽离公共代码；我们想统一修改所有代码中的某些值；我们还想对代码进行压缩，去除所有的console… , 总之这一阶段的代码还是存在很大的改进空间的，这就是plugin的用武之地了。</p>
+<p>plugins的配置</p>
+<p>webpack称plugins为其backbone,一切loader不能做的处理都可由plugins来做。此评价足见其重要性。</p>
+<p>鉴于插件如此重要，webpack内置了众多的常用的plugins，无需额外安装就可直接使用。我们先看看plugins的基本配置方法，然后再分类介绍一下常用的plugins。</p>
+<p>plugins的使用方法</p>
+<p>plugins是一个数组，数组中的每一项都是某一个plugin的实例，plugins数组甚至可以存在一个插件的多个实例。</p>
+<p>下面代码中，分别展示了webpack内置插件和第三方插件的使用方法：<br />
+<pre><code>// 第三方插件需要在安装后引入
+const CleanWebpackPlugin = require(&quot;clean-webpack-plugin&quot;);
+
+{
+    ...
+    plugins:[
+      new webpack.DefinePlugin({
+        &quot;process.env&quot;: {
+            NODE_ENV: JSON.stringify(&quot;production&quot;)
+        }
+    }),
+      new CleanWebpackPlugin([&quot;js&quot;], {
+        root: __dirname + &quot;/stu/&quot;,
+        verbose: true,
+        dry: false
+    })
+    ]
+}
+</code></pre><br />
+一种插件其实就是一种函数，通过传入不同的参数，插件可按我们的需求实现不同的功能。不过插件数量众多，我们甚至还可以自己来写插件，每个插件还有自己特定的配置规则，这也是webpack让人觉得难学的地方之一，不过好在作为一个工具，对于我们大多数人最需要掌握的plugins并不是那么多，其它的待真的有相关需求再边查边学也不迟，webpack的插件列表可参看这里。</p>
+<p>常用plugins的介绍</p>
+<p>plugins功能众多，但是大多数plugin的功能主要集中在两方面：</p>
+<p>对前一阶段打包后的代码进行处理，如添加替换一些内容，分割代码为多块，添加一些全局设置等。</p>
+<p>辅助输出，如自动生成带有链接的index.html，对生成文件存储文件夹做一定的清理等。</p>
+<p>对代码进行处理</p>
+<p>BannerPlugin:给代码添加版权信息，如在plugins数组中添加new BannerPlugin(‘GitChat’)后能在打包生成的所有文件前添加注释GitChat详见。</p>
+<p>CommonsChunkPlugin，用于抽离代码，具有多种用途 详情查看CommonsChunkPlugin。</p>
+<p>抽离不同文件的共享代码，减少chunk间的重复代码，有效利用缓存。</p>
+<p>抽离可能整个项目都在使用的第三方模块，比如react react-dom。</p>
+<p>将多个子chunk中的共用代码打包进父chunk或使用异步加载的单独chunk。</p>
+<p>抽离Manifest这类每次打包都会变化的内容，减轻打包时候的压力，提升构建速度。</p>
+<p>CompressionWebpackPlugin:使用配置的算法（如gzip）压缩打包生成的文件，详见。</p>
+<p>DefinePlugin:创建一个在编译时可配置的全局常量,如果你自定义了一个全局变量PRODUCTION,可在此设置其值来区分开发还是生产环境详见。</p>
+<p>EnvironmentPlugin:实际上是DefinePlugin插件中对process.env进行设置的简写形式，如new webpack.EnvironmentPlugin([&lsquo;NODE_ENV&rsquo;, &lsquo;DEBUG&rsquo;])将设置process.env.NODE_ENV=&rsquo;DEBUG&rsquo;,EnvironmentPlugin。</p>
+<p>ExtractTextWebpackPlugin:抽离css文件为单独的css文件，详见。</p>
+<p>ProvidePlugin：全局自动加载模块，如添加new webpack.ProvidePlugin({$: &lsquo;jquery&rsquo;, jQuery: &lsquo;jquery&rsquo;})后,则全局不用在导入jquery就可以直接使用$，ProvidePlugin。</p>
+<p>UglifyjsWebpackPlugin:使用前需要先安装，基于UglifyJS压缩代码，支持其所有配置UglifyjsWebpackPlugin。</p>
+<p>辅助输出打包后的代码</p>
+<p>HtmlWebpackPlugin:使用前需要先安装，为你自动生成一个html文件，该文件将自动依据entry的配置引入依赖，如果你的文件名中添加了[hash]等占位符，这将非常有用, 详见。</p>
+<p>CleanWebpackPlugin:使用前需要先安装，此插件允许你在配置以后，每次打包时，清空所配置的文件夹，如果你每次打包的文件名不同，这将非常有用 GitHub - clean-webpack-plugin。</p>
+<p>通过上述对不同插件的描述，你一定大致明白了，插件可以做什么，之后在开发的过程中，如果你遇到的什么需要在此阶段解决的问题，大可搜索看看是否有相关的插件，推荐查阅awesome-webpack。</p>
+<p>学习了插件以后，现在我们的配置对象是如下这样：<br />
+<pre><code>// 第5阶段
+{
+    entry: {
+        main: './src/index.js'
+    },
+    output: {
+        path: path.join(__dirname, './dist'),
+        name: 'js/bundle-[name].js',
+        chunkFilename: 'js/[name].chunk.js',
+        publicPath: '/dist/'
+    },
+    module: {
+        rules: [{
+            test: /(\.jsx|\.js)$/,
+            use: {
+                loader: &quot;babel-loader&quot;,
+                options: {
+                    presets: [&quot;es2015&quot;, &quot;react&quot;]
+                }
+            },
+            exclude: /node_modules/
+        }, {
+            test: /\.css$/,
+            use: [&quot;style-loader&quot;, &quot;css-loader&quot;]
+        }, {
+            test: /\.less$/,
+            use: [&quot;style-loader&quot;, &quot;css-loader&quot;, &quot;less-loader&quot;]
+        }]
+    },
+    plugins: [
+        new webpack
+        .optimize
+        .CommonsChunkPlugin({
+            name: 'vendor',
+            filename: &quot;js/[name]-[chunkhash].js&quot;
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: &quot;manifest&quot;,
+            minChunks: Infinity
+        }),
+        new webpack.ProvidePlugin({
+            Promise: &quot;exports-loader?global.Promise!es6-promise&quot;,
+            fetch: &quot;exports-loader?self.fetch!whatwg-fetch&quot;
+        }),
+        new HtmlWebpackPlugin({
+            filename: &quot;index.html&quot;,
+            template: &quot;app/index.html&quot;,
+            inject: &quot;body&quot;
+        }),
+        new CleanWebpackPlugin([&quot;js&quot;], {
+            root: __dirname + &quot;/stu/&quot;,
+            verbose: true,
+            dry: false
+        }),
+        new webpack.DefinePlugin({
+            &quot;process.env&quot;: {
+                NODE_ENV: JSON.stringify(&quot;production&quot;)
+            }
+        })
+    ]
+}
+</code></pre><br />
+至此，从输入entry-&gt;处理loaders/plugins-&gt;输出output，我们讲解了webpack的核心功能，不过webpack还提供其它的一些配置项，这些配置项大多从两方面起作用，辅助开发、对构建过程中的一些细节做调整。对这些属性，下面只做简单的介绍。</p>
+<p>其它的一些配置</p>
+<p>辅助开发的相关属性</p>
+<p>devtool:</p>
+<p>打包后的代码和原始的代码往往存在较大的差异，此选项控制是否生成，以及如何生成 source map，用以帮助你进行调试，详情可查看Devtool。</p>
+<p>devServer：</p>
+<p>通过配置devServer选项，你可以开启一个本地服务器，webpack为此本地服务器提供了非常多的配置选项，点击查看dev-server，你会发现通过合适的配置，你可以拥有所有本地服务器可提供的功能。</p>
+<p>watch:</p>
+<p>启用 Watch 模式后，webpack 将持续监听任何已解析文件的更改，重新构建文件，Watch 模式默认关闭，在开发时候如果开启会很方便。</p>
+<p>watchOptions:</p>
+<p>一组用来定制 Watch 模式的选项： 详见 watch。</p>
+<p>performance:</p>
+<p>本配置让你设置打包后命令行中该如何展示性能提示，比如是否开启提示，资源如果超过某个大小时该警告还是报错，详见performance。</p>
+<p>stats:</p>
+<p>本选项让你配置打包过程中输出的内容，如没有输出none，标准输出normal，全部输出verbose，只输出错误errors-only等等。</p>
+<p>精细配置相关属性</p>
+<p>content:设置基础路径，默认使用当前目录。</p>
+<p>resolve:</p>
+<p>确定模块如何被解析，webpack已经提供了合理的默认值，不过通过你的自定义配置，可以对模块解析实现更加精细的控制，如对某些常用模块可以通过设置别名以更容易引用，也可在此处设置可被忽略的后缀名，详见 resolve。</p>
+<p>target:</p>
+<p>告知 webpack 需要打包的代码执行的环境，针对 node 和 web 打包过程会有所不同，详见Target。</p>
+<p>externals:</p>
+<p>让打包生成的代码中不添加某依赖项，而让这些依赖项直接从用户环境中获取,在进行库的开发时非常有用。</p>
+<p>node:</p>
+<p>是一个对象，其中每个属性都是 Node.js 全局变量或模块的名称,每一项的设置值都可以是（true/mock/empty/false）中的一种，以确定这些node中的对象在其它环境中是否可用。</p>
+<p>此外webpack还具备其它一些用的比较少的配置对象，详见 Other Options。</p>
+<p>至此，我们了解了webpack常用的配置项及其意义。为了检测我们的学习成果，我们一起分析一个中等项目中的webpack配置文件。配置文件来自于create-react-app,使用create-react-app新建项目后，执行npm run eject可看到多个配置文件，这里我们选择webpack.dev.js。</p>
+<p>分析create-react-app中webpack的配置<br />
+<pre><code>const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
+const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
+const eslintFormatter = require('react-dev-utils/eslintFormatter');
+const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
+
+module.exports = {
+  devtool: 'cheap-module-source-map',
+  entry: [
+    require.resolve('react-dev-utils/webpackHotDevClient'),
+    require.resolve('./polyfills'),
+    require.resolve('react-error-overlay'),
+    'src/index.js'
+  ],
+  output: {
+    path: '/build/',
+    pathinfo: true,
+    filename: 'static/js/bundle.js',
+    chunkFilename: 'static/js/[name].chunk.js',
+    publicPath: '',
+    devtoolModuleFilenameTemplate: info =&gt;
+      path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'),
+  },
+  resolve: {
+    modules: ['node_modules'],
+    extensions: ['.web.js', '.js', '.json', '.web.jsx', '.jsx'],
+    alias: {
+      'react-native': 'react-native-web',
+    },
+    plugins: [
+      new ModuleScopePlugin('/src'),
+    ],
+  },
+  module: {
+    strictExportPresence: true,
+    rules: [{
+      test: /\.(js|jsx)$/,
+      enforce: 'pre',
+      use: [{
+        options: {
+          formatter: eslintFormatter,
+        },
+        loader: require.resolve('eslint-loader'),
+      }, ],
+      include: 'src',
+    }, {
+      exclude: [/\.html$/,/\.(js|jsx)$/,/\.css$/,/\.json$/,/\.bmp$/,/\.gif$/,/\.jpe?g$/,/\.png$/],
+      loader: require.resolve('file-loader'),
+      options: {
+        name: 'static/media/[name].[hash:8].[ext]',
+      },
+    }, {
+      test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+      loader: require.resolve('url-loader'),
+      options: {
+        limit: 10000,
+        name: 'static/media/[name].[hash:8].[ext]',
+      },
+    }, {
+      test: /\.(js|jsx)$/,
+      include: 'src',
+      loader: require.resolve('babel-loader'),
+      options: {
+        cacheDirectory: true,
+      },
+    }, {
+      test: /\.css$/,
+      use: [
+        require.resolve('style-loader'), {
+          loader: require.resolve('css-loader'),
+          options: {
+            importLoaders: 1,
+          },
+        }, {
+          loader: require.resolve('postcss-loader'),
+          options: {
+                    ...
+          },
+        },
+      ],
+    }, ],
+  },
+  plugins: [
+    new InterpolateHtmlPlugin({
+      NODE_ENV:'development',
+      PUBLIC_URL:''
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: 'public/index.html',
+    }),
+    new webpack.NamedModulesPlugin(),
+    new webpack.DefinePlugin({
+      'process.env':{
+        NODE_ENV:&quot;development&quot;,
+        PUBLIC_URL:'&quot; &quot;'
+      }
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+    new CaseSensitivePathsPlugin(),
+    new WatchMissingNodeModulesPlugin(paths.appNodeModules),
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+  ],
+  node: {
+    dgram: 'empty',
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty',
+  },
+  performance: {
+    hints: false,
+  },
+};
+</code></pre><br />
+对可能和你看到的webpack.config.dev.js有所不同的说明：：</p>
+<p>npm run reject之前，对create-react-app的一些设置会影响这里看到的配置文件。</p>
+<p>原始的webpack.config.dev.js中，部分值由外部函数生成，相关值，在上述代码中直接改为了确定的结果，如env.raw在上述代码中被替换为：</p>
+<p>{<br />
+      NODE_ENV:&rsquo;development&rsquo;,<br />
+      PUBLIC_URL:&rsquo;&lsquo;<br />
+    }<br />
+create-react-app在开发环境并不生成真实的文件到硬盘，上述代码中的部分路径可能有误，见谅。</p>
+<p>推荐在看下面的分析前，花三分钟看看上述文件，如果都能看得懂，那么恭喜你，你已经明白webpack的运作方式了，快去自己的项目中实践吧，如果还有疑惑，也不要紧，我们一起来分析。</p>
+<p>webpack.config.dev.js执行于node环境</p>
+<p>首先，我们应该明确webpack.config.dev.js执行于node环境,目的在于返回webpack需要的配置对象，因此其中可以使用node提供的一些特殊变量和语法，比如__dirname，又如引入模块时采用CommonJS模式。</p>
+<p>此文件的开头，首先通过require语句引入了path,webpack和一系列webpack插件，除了HtmlWebpackPlugin在前文中我们见过，其它的我们都未曾见过，其实这些大多是create-react-app针对webpack已有的插件改进或新开发的插件，所以不熟悉也正常，随后我们将一个个的弄清楚它们是干嘛的。</p>
+<p>对module.exports的分析</p>
+<p>devtool</p>
+<p>此处的配置值为cheap-module-source-map,代表不带列映射的 SourceMap，将加载的 Source Map 简化为每行单独映射。</p>
+<p>entry</p>
+<p>此处的entry是一个数组，代表着四项的代码都会添加到打包结果之中。</p>
+<p>webpackHotDevClient可以被看做具有更好体验的WebpackDevServer。</p>
+<p>./ployfill.js用以在浏览器中支持promise/fetch/object-assign。</p>
+<p>react-error-overlay在开发环境中使用，强制显示错误页面。</p>
+<p>./src/index.js则是我们的app的主入口。</p>
+<p>output</p>
+<p>在实际使用create-react-app的过程中，我们并看不见开发环境的打包结果，因此此处的说明仅供参考。</p>
+<p>path指定，打包后文件存放的位置为/build/。</p>
+<p>pathinfo为true，在打包文件后，在其中所包含引用模块的信息，这在开发环境中有利于调试。</p>
+<p>filename指定了打包的名字和基本的引用路径static/js/bundle.js。</p>
+<p>chunkFilename:指定了非入口文件的名称static/js/<a href="代表打包后文件的名称，在entry或代码中(之后会看到)确定；">name</a>.chunk.js。</p>
+<p>publicPath:指定服务器读取时的路径，此处设置为。</p>
+<p>devtoolModuleFilenameTemplate:这里是一个函数，指定了map位于磁盘的位置。</p>
+<p>resolve</p>
+<p>modules:指定了模块的搜索的位置，这里设置为node_modules。</p>
+<p>extensions:指明在引用模块时哪些后缀名可以忽略，这里忽略的文件名包括.js/.jsx/.web.js/.web.jsx等。</p>
+<p>alias:创建 import 或 require 的别名，使得部分模块的引用变得简单，安装上文的设置，现在我们可以直接引用react-native和react-native-web了。</p>
+<p>plugins:此处使用了ModuleScopePlugin的实例，用以限制自己编写的模块只能从src目录中引入。</p>
+<p>modules</p>
+<p>strictExportPresence:这里设置为true,表明文件中如果缺少exports时会直接报错而不是警告。</p>
+<p>rules：</p>
+<p>Rule1：对js/jsx文件前置使用eslintFormatter，设置formatter格式为eslintFormatter。</p>
+<p>Rule2：对exclude中的众多文件类型不使用file-loader,并设置其它文件打包后的名称按&rsquo;static/media/<a href="代表打包后文件的名称，在entry或代码中(之后会看到)确定；">name</a>.[hash:8].<a href="资源扩展名,如js,jsx,png等等;">ext</a>&lsquo;格式设置。</p>
+<p>Rule3: 对js/jsx文件调用babel-loader处理转换。</p>
+<p>Rule4: 对css文件，按顺序调用style-loader,css-loader,postcss-loader进行处理。</p>
+<h2 id="plugins"><a name="user-content-plugins" href="#plugins" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>plugins</h2>
+<p>这里的一些插件，有的可能我们还比较陌生，我们一一介绍。<br />
+<pre><code>InterpolateHtmlPlugin:和HtmlWebpackPlugin串行使用，允许在index.html中添加变量。
+
+HtmlWebpackPlugin:自动生成带有入口文件引用的index.html。
+
+NamedModulesPlugin:当开启 HMR 的时候使用该插件会显示模块的相对路径，建议用于开发环境。
+
+DefinePlugin:这里我们设置了process.env.NODE_ENV的值为development。
+
+HotModuleReplacementPlugin:启用模块热替换。
+
+CaseSensitivePathsPlugin:如果路径有误则直接报错。
+
+WatchMissingNodeModulesPlugin:此插件允许你安装库后自动重新构建打包文件。
+
+new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/):忽略所匹配的moment.js。
+
+node
+
+设置node的dgram/fs/let/tls模块的的值，如果在其它环境中使用时值为empty。
+
+performance
+
+hints: false:不提示测试环境的打包结果。
+</code></pre><br />
+上文一直讨论的是，webpack各设置项的基本意义，目的在于让你在有相关需求时，能知道该从哪一项下手查询。不过看到这里，如果你之前从未上手操作过webpack可能依旧不知道该如何使用，下面我分析一下，我在自己的项目中是如何使用的。</p>
+<p>一些工程实践建议</p>
+<p>官方文档的guides部分已经就如何实践提出了较多的建议，建议阅读以下内容前先行阅读。</p>
+<p>结合npm使用</p>
+<p>webpack在安装后有多种调用方法。</p>
+<p>在命令行中直接传入参数使用（这个实际我用的比较少）。</p>
+<p>自定义 webpack.config.js文件,在其中完成配置，然后在命令行中执行webpack &ndash;config webpack.config.js来使用，配置文件可以是任何其它名称（如果是webpack.config.js,我们直接使用webpack命令）。</p>
+<p>结合npm使用，在package.json文件中的scripts对象中添加相关命令使用，之后通过npm run使用，如下：<br />
+<pre><code>&quot;scripts&quot;: {
+    &quot;build:prod&quot;: &quot;webpack --progress --colors --watch --config webpack.prod.js&quot;,
+    &quot;build:dev&quot;: &quot;webpack --progress --colors --watch --config webpack.dev.js&quot;
+}
+</code></pre><br />
+上面我们分别构建了webpack.prod.js和webpack.dev.js来分别生成开发环境和生产环境的代码，在命令行中执行npm run build:prod和npm run build:dev即可生成对应代码。</p>
+<p>为生产环境指定合理的缓存</p>
+<p>关于缓存，官方文档中有一节讲解的非常详细，请参见缓存。</p>
+<p>合理分割代码</p>
+<p>webpack提供了三种分割代码的方法，分别是通过entry,通过CommonsChunkPlugin插件和通过动态import（在webpack1.x中时也常常使用require.ensure来依据路由分割代码）。</p>
+<p>entry的配置常用于多页应用，CommonsChunkPlugin的使用前文已做简要叙述，下面简单叙述下代码分割原则及我实际工作中是如何使用动态import来分割代码的。</p>
+<p>分割原则</p>
+<p>目前工作中主要依据两个原则来分隔代码：</p>
+<p>前端路由：依据路由对应的页面进行分割，这种分割之后的体验类似于小程序中每次打开新页加载对应页面的js文件。</p>
+<p>针对逻辑交互比较复杂的页面，如果某个较复杂的组件需被某操作触发后才呈现，也会把该组件分割出来。</p>
+<p>分割方法</p>
+<p>我们知道动态import返回值其实是一个Promise,基于此，对应于我用的React，我常采用以下函数辅助加载。<br />
+<pre><code class="js">// lib.js 定义懒加载函数
+module.exports.withLazyLoading = function withLazyLoading(getComponent,Spinner = null) {
+    return class LazyLoadingWrapper extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = ({
+                Component: null,
+            })
+        }
+
+        componentWillMount() {
+            const {onLoadingStart, onLoadingEnd, onError} = this.props;
+              onLoadingStart();
+            getComponent()
+                .then(esModule =&gt; {
+                    this.setState({Component: esModule.default})
+                })
+                .catch(err =&gt; {
+                    onError(err, this.props)
+                })
+        }
+
+        render() {
+            const {Component} = this.state;
+            if (!Component) return Spinner;
+            return &lt;Component {...this.props} /&gt;
+        }
+    }
+};
+</code></pre><br />
+对代码的分割方法如下：<br />
+<pre><code class="js">// 在需要的地方调用懒加载函数
+import {withLazyLoading} from &quot;lib&quot;;
+// 
+import {Loading} from 'Loadings';
+
+export default withLazyLoading(
+    () =&gt; {
+        return import (/* webpackChunkName: &quot;ConCard&quot; */ &quot;../../containers/ConCard.js&quot;)
+    }, Loading());
+</code></pre><br />
+简要的说明一下上述代码的意义，懒加载函数withLazyLoading接受动态import的组件和一个加载动画作为参数，动态import的组件加载成功前显示加载动画组件，成功后显示import的组件，通过自定义各种各样的Spinner加载动画，我们可以实现优雅的js文件加载过程。</p>
+<p>观察打包后文件的结构，合理进行优化</p>
+<p>使用webpack &ndash;json &gt; stats.json命令可以生成一个包含依赖关系的json文件。webpack提供了多种可视化工具帮我们分析这个文件，我最喜欢的工具插件是BundleAnalyzerPlugin，可通过下述方法引入该插件：<br />
+<pre><code>new BundleAnalyzerPlugin({
+    analyzerMode: 'static'
+})
+</code></pre><br />
+添加此插件，再次构建完成时，浏览器中将自动打开一个类似下面这样的网页：</p>
+<p>BundleAnalyzerPlugin</p>
+<p>这样我们可以轻易分析我们的代码分割是否合理，比如：</p>
+<p>分割后文件过大的主要原因是在于引入了那些模块。</p>
+<p>分析大多后的多文件中存不存在对某些比较大的模块的重复引用，方便我们进一步修正自己的配置文件。</p>
+<p>上图是我之前项目中的一张截图，第一次见到这张图时还是给了我很多后期优化的思路的，引用chat.js的同时引入了moment.js,而实际上该页面只有一张图表，这让我考虑另寻图表解决方案，lodash,velocity在最初的项目中使用过，后逐步去除，属于遗留代码，现在还存在说明在局部可能还是用到了，这都是之后编码的改进方向。</p>
+<h2 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>后记</h2>
+<p>总觉得技术类的文章也是该有生命力的，花了好久写完本文，回头看发现有的内容还是没有表达或交待清楚。所以有任何建议，请随意提出，我们在Chat中继续讨论，我也将对本文做长期持续的修改。</p>
+<p>针对webpack3.5.5官网文档，使用mindNode制作了一个思维导图的草稿，此思维导图还需完善，之后将持续修改，点击此处可查看，该思维导图示例如下。</p>
+<p>思维导图局部示例</p>
+<p>另外，关于webpack1和webapck2的区别，官方文档中有一部分做了详细的讲解，所以本文中不做赘述，看完以后如果还有疑问，之后我们再详细讨论。</p>
+<hr />
+<p>title: Migrating Versions<br />
+sort: 15<br />
+contributors:<br />
+  - sokra<br />
+  - jhnns<br />
+  - grgur<br />
+  - domfarolino<br />
+  - johnnyreilly<br />
+  - jouni-kantola<br />
+  - frederikprijck<br />
+  - chrisVillanueva<br />
+  - bebraw<br />
+  - howdy39<br />
+  - selbekk<br />
+  - ndelangen</p>
+<hr />
+<p>The following sections describe the major changes from webpack 1 to 2.</p>
+<p>T&gt; Note that there were far fewer changes between 2 and 3, so that migration shouldn&rsquo;t be too bad. If you are running into issues, please see <a href="https://github.com/webpack/webpack/releases">the changelog</a> for details.</p>
+<p>W&gt; This content may be moved to the blog post in the near future as version 2 has been out for a while. On top of that, version 3 was recently released and version 4 is on the horizon. As noted above, folks should instead to refer to <a href="https://github.com/webpack/webpack/releases">the changelog</a> for migrations.</p>
+<h2 id="resolveroot-resolvefallback-resolvemodulesdirectories"><code>resolve.root</code>, <code>resolve.fallback</code>, <code>resolve.modulesDirectories</code></h2>
+<p>These options were replaced by a single option <code>resolve.modules</code>. See <a href="/configuration/resolve">resolving</a> for more usage.</p>
+<pre><code class="diff">  resolve: {
+-   root: path.join(__dirname, &quot;src&quot;)
++   modules: [
++     path.join(__dirname, &quot;src&quot;),
++     &quot;node_modules&quot;
++   ]
+  }
+</code></pre>
+
+<h2 id="resolveextensions"><code>resolve.extensions</code></h2>
+<p>This option no longer requires passing an empty string. This behavior was moved to <code>resolve.enforceExtension</code>. See <a href="/configuration/resolve">resolving</a> for more usage.</p>
+<h2 id="resolve"><code>resolve.*</code></h2>
+<p>Several APIs were changed here. Not listed in detail as it&rsquo;s not commonly used. See <a href="/configuration/resolve">resolving</a> for details.</p>
+<h2 id="moduleloaders-is-now-modulerules"><code>module.loaders</code> is now <code>module.rules</code></h2>
+<p>The old loader configuration was superseded by a more powerful rules system, which allows configuration of loaders and more.<br />
+For compatibility reasons, the old <code>module.loaders</code> syntax is still valid and the old names are parsed.<br />
+The new naming conventions are easier to understand and are a good reason to upgrade the configuration to using <code>module.rules</code>.</p>
+<pre><code class="diff">  module: {
+-   loaders: [
++   rules: [
+      {
+        test: /\.css$/,
+-       loaders: [
+-         &quot;style-loader&quot;,
+-         &quot;css-loader?modules=true&quot;
++       use: [
++         {
++           loader: &quot;style-loader&quot;
++         },
++         {
++           loader: &quot;css-loader&quot;,
++           options: {
++             modules: true
++           }
++         }
+        ]
+      },
+      {
+        test: /\.jsx$/,
+        loader: &quot;babel-loader&quot;, // Do not use &quot;use&quot; here
+        options: {
+          // ...
+        }
+      }
+    ]
+  }
+</code></pre>
+
+<h2 id="chaining-loaders"><a name="user-content-chaining-loaders" href="#chaining-loaders" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Chaining loaders</h2>
+<p>Like in webpack 1, loaders can be chained to pass results from loader to loader. Using the <a href="/configuration/module#rule-use">rule.use</a><br />
+ configuration option, <code>use</code> can be set to an array of loaders.<br />
+In webpack 1, loaders were commonly chained with <code>!</code>. This style is only supported using the legacy option <code>module.loaders</code>.</p>
+<pre><code class="diff">  module: {
+-   loaders: [{
++   rules: [{
+      test: /\.less$/,
+-     loader: &quot;style-loader!css-loader!less-loader&quot;
++     use: [
++       &quot;style-loader&quot;,
++       &quot;css-loader&quot;,
++       &quot;less-loader&quot;
++     ]
+    }]
+  }
+</code></pre>
+
+<h2 id="automatic-loader-module-name-extension-removed"><a name="user-content-automatic-loader-module-name-extension-removed" href="#automatic-loader-module-name-extension-removed" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Automatic <code>-loader</code> module name extension removed</h2>
+<p>It is not possible anymore to omit the <code>-loader</code> extension when referencing loaders:</p>
+<pre><code class="diff">  module: {
+    rules: [
+      {
+        use: [
+-         &quot;style&quot;,
++         &quot;style-loader&quot;,
+-         &quot;css&quot;,
++         &quot;css-loader&quot;,
+-         &quot;less&quot;,
++         &quot;less-loader&quot;,
+        ]
+      }
+    ]
+  }
+</code></pre>
+
+<p>You can still opt-in to the old behavior with the <code>resolveLoader.moduleExtensions</code> configuration option, but this is not recommended.</p>
+<pre><code class="diff">+ resolveLoader: {
++   moduleExtensions: [&quot;-loader&quot;]
++ }
+</code></pre>
+
+<p>See <a href="https://github.com/webpack/webpack/issues/2986">#2986</a> for the reason behind this change.</p>
+<h2 id="json-loader-is-not-required-anymore"><code>json-loader</code> is not required anymore</h2>
+<p>When no loader has been configured for a JSON file, webpack will automatically try to load the JSON<br />
+file with the <a href="https://github.com/webpack/json-loader"><code>json-loader</code></a>.</p>
+<pre><code class="diff">  module: {
+    rules: [
+-     {
+-       test: /\.json/,
+-       loader: &quot;json-loader&quot;
+-     }
+    ]
+  }
+</code></pre>
+
+<p><a href="https://github.com/webpack/webpack/issues/3363">We decided to do this</a> in order to iron out environment differences<br />
+  between webpack, node.js and browserify.</p>
+<h2 id="loaders-in-configuration-resolve-relative-to-context"><a name="user-content-loaders-in-configuration-resolve-relative-to-context" href="#loaders-in-configuration-resolve-relative-to-context" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Loaders in configuration resolve relative to context</h2>
+<p>In <strong>webpack 1</strong>, configured loaders resolve relative to the matched file. However, in <strong>webpack 2</strong>, configured loaders resolve relative to the <code>context</code> option.</p>
+<p>This solves some problems with duplicate modules caused by loaders when using <code>npm link</code> or referencing modules outside of the <code>context</code>.</p>
+<p>You may remove some hacks to work around this:</p>
+<pre><code class="diff">  module: {
+    rules: [
+      {
+        // ...
+-       loader: require.resolve(&quot;my-loader&quot;)
++       loader: &quot;my-loader&quot;
+      }
+    ]
+  },
+  resolveLoader: {
+-   root: path.resolve(__dirname, &quot;node_modules&quot;)
+  }
+</code></pre>
+
+<h2 id="modulepreloaders-and-modulepostloaders-were-removed"><code>module.preLoaders</code> and <code>module.postLoaders</code> were removed:</h2>
+<pre><code class="diff">  module: {
+-   preLoaders: [
++   rules: [
+      {
+        test: /\.js$/,
++       enforce: &quot;pre&quot;,
+        loader: &quot;eslint-loader&quot;
+      }
+    ]
+  }
+</code></pre>
+
+<h2 id="uglifyjsplugin-sourcemap"><code>UglifyJsPlugin</code> sourceMap</h2>
+<p>The <code>sourceMap</code> option of the <code>UglifyJsPlugin</code> now defaults to <code>false</code> instead of <code>true</code>. This means that if you are using source maps for minimized code or want correct line numbers for uglifyjs warnings, you need to set <code>sourceMap: true</code> for <code>UglifyJsPlugin</code>.</p>
+<pre><code class="diff">  devtool: &quot;source-map&quot;,
+  plugins: [
+    new UglifyJsPlugin({
++     sourceMap: true
+    })
+  ]
+</code></pre>
+
+<h2 id="uglifyjsplugin-warnings"><code>UglifyJsPlugin</code> warnings</h2>
+<p>The <code>compress.warnings</code> option of the <code>UglifyJsPlugin</code> now defaults to <code>false</code> instead of <code>true</code>.<br />
+This means that if you want to see uglifyjs warnings, you need to set <code>compress.warnings</code> to <code>true</code>.</p>
+<pre><code class="diff">  devtool: &quot;source-map&quot;,
+  plugins: [
+    new UglifyJsPlugin({
++     compress: {
++       warnings: true
++     }
+    })
+  ]
+</code></pre>
+
+<h2 id="uglifyjsplugin-minimize-loaders"><code>UglifyJsPlugin</code> minimize loaders</h2>
+<p><code>UglifyJsPlugin</code> no longer switches loaders into minimize mode. The <code>minimize: true</code> setting needs to be passed via loader options in the long-term. See loader documentation for relevant options.</p>
+<p>The minimize mode for loaders will be removed in webpack 3 or later.</p>
+<p>To keep compatibility with old loaders, loaders can be switched to minimize mode via plugin:</p>
+<pre><code class="diff">  plugins: [
++   new webpack.LoaderOptionsPlugin({
++     minimize: true
++   })
+  ]
+</code></pre>
+
+<h2 id="dedupeplugin-has-been-removed"><code>DedupePlugin</code> has been removed</h2>
+<p><code>webpack.optimize.DedupePlugin</code> isn&rsquo;t needed anymore. Remove it from your configuration.</p>
+<h2 id="bannerplugin-breaking-change"><code>BannerPlugin</code> - breaking change</h2>
+<p><code>BannerPlugin</code> no longer accepts two parameters, but a single options object.</p>
+<pre><code class="diff">  plugins: [
+-    new webpack.BannerPlugin('Banner', {raw: true, entryOnly: true});
++    new webpack.BannerPlugin({banner: 'Banner', raw: true, entryOnly: true});
+  ]
+</code></pre>
+
+<h2 id="occurrenceorderplugin-is-now-on-by-default"><code>OccurrenceOrderPlugin</code> is now on by default</h2>
+<p>The <code>OccurrenceOrderPlugin</code> is now enabled by default and has been renamed (<code>OccurenceOrderPlugin</code> in webpack 1).<br />
+Thus make sure to remove the plugin from your configuration:</p>
+<pre><code class="diff">  plugins: [
+    // webpack 1
+-   new webpack.optimize.OccurenceOrderPlugin()
+    // webpack 2
+-   new webpack.optimize.OccurrenceOrderPlugin()
+  ]
+</code></pre>
+
+<h2 id="extracttextwebpackplugin-breaking-change"><code>ExtractTextWebpackPlugin</code> - breaking change</h2>
+<p><a href="https://github.com/webpack/extract-text-webpack-plugin">ExtractTextPlugin</a> requires version 2 to work with webpack 2.</p>
+<p><code>npm install --save-dev extract-text-webpack-plugin</code></p>
+<p>The configuration changes for this plugin are mainly syntactical.</p>
+<h3 id="extracttextpluginextract"><code>ExtractTextPlugin.extract</code></h3>
+<pre><code class="diff">module: {
+  rules: [
+    {
+      test: /.css$/,
+-      loader: ExtractTextPlugin.extract(&quot;style-loader&quot;, &quot;css-loader&quot;, { publicPath: &quot;/dist&quot; })
++      use: ExtractTextPlugin.extract({
++        fallback: &quot;style-loader&quot;,
++        use: &quot;css-loader&quot;,
++        publicPath: &quot;/dist&quot;
++      })
+    }
+  ]
+}
+</code></pre>
+
+<h3 id="new-extracttextpluginoptions"><code>new ExtractTextPlugin({options})</code></h3>
+<pre><code class="diff">plugins: [
+-  new ExtractTextPlugin(&quot;bundle.css&quot;, { allChunks: true, disable: false })
++  new ExtractTextPlugin({
++    filename: &quot;bundle.css&quot;,
++    disable: false,
++    allChunks: true
++  })
+]
+</code></pre>
+
+<h2 id="full-dynamic-requires-now-fail-by-default"><a name="user-content-full-dynamic-requires-now-fail-by-default" href="#full-dynamic-requires-now-fail-by-default" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Full dynamic requires now fail by default</h2>
+<p>A dependency with only an expression (i. e. <code>require(expr)</code>) will now create an empty context instead of the context of the complete directory.</p>
+<p>Code like this should be refactored as it won&rsquo;t work with ES2015 modules. If this is not possible you can use the <code>ContextReplacementPlugin</code> to hint the compiler towards the correct resolving.</p>
+<p>?&gt; Link to an article about dynamic dependencies.</p>
+<h3 id="using-custom-arguments-in-cli-and-configuration"><a name="user-content-using-custom-arguments-in-cli-and-configuration" href="#using-custom-arguments-in-cli-and-configuration" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Using custom arguments in CLI and configuration</h3>
+<p>If you abused the CLI to pass custom arguments to the configuration like so:</p>
+<p><code>webpack --custom-stuff</code></p>
+<pre><code class="js">// webpack.config.js
+var customStuff = process.argv.indexOf(&quot;--custom-stuff&quot;) &gt;= 0;
+/* ... */
+module.exports = config;
+</code></pre>
+
+<p>You may notice that this is no longer allowed. The CLI is more strict now.</p>
+<p>Instead there is an interface for passing arguments to the configuration. This should be used instead. Future tools may rely on this.</p>
+<p><code>webpack --env.customStuff</code></p>
+<pre><code class="js">module.exports = function(env) {
+  var customStuff = env.customStuff;
+  /* ... */
+  return config;
+};
+</code></pre>
+
+<p>See <a href="/api/cli">CLI</a>.</p>
+<h2 id="requireensure-and-amd-require-are-asynchronous"><code>require.ensure</code> and AMD <code>require</code> are asynchronous</h2>
+<p>These functions are now always asynchronous instead of calling their callback synchronously if the chunk is already loaded.</p>
+<p><strong><code>require.ensure</code> now depends upon native <code>Promise</code>s. If using <code>require.ensure</code> in an environment that lacks them then you will need a polyfill. </strong></p>
+<h2 id="loader-configuration-is-through-options"><a name="user-content-loader-configuration-is-through-options" href="#loader-configuration-is-through-options" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Loader configuration is through <code>options</code></h2>
+<p>You can <em>no longer</em> configure a loader with a custom property in the <code>webpack.config.js</code>. It must be done through the <code>options</code>. The following configuration with the <code>ts</code> property is no longer valid with webpack 2:</p>
+<pre><code class="js">module.exports = {
+  ...
+  module: {
+    rules: [{
+      test: /\.tsx?$/,
+      loader: 'ts-loader'
+    }]
+  },
+  // does not work with webpack 2
+  ts: { transpileOnly: false }
+}
+</code></pre>
+
+<h3 id="what-are-options"><a name="user-content-what-are-options" href="#what-are-options" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>What are <code>options</code>?</h3>
+<p>Good question. Well, strictly speaking it&rsquo;s 2 possible things; both ways to configure a webpack loader. Classically <code>options</code> was called <code>query</code> and was a string which could be appended to the name of the loader. Much like a query string but actually with <a href="https://github.com/webpack/loader-utils#parsequery">greater powers</a>:</p>
+<pre><code class="js">module.exports = {
+  ...
+  module: {
+    rules: [{
+      test: /\.tsx?$/,
+      loader: 'ts-loader?' + JSON.stringify({ transpileOnly: false })
+    }]
+  }
+}
+</code></pre>
+
+<p>But it can also be a separately specified object that&rsquo;s supplied alongside a loader:</p>
+<pre><code class="js">module.exports = {
+  ...
+  module: {
+    rules: [{
+      test: /\.tsx?$/,
+      loader: 'ts-loader',
+      options:  { transpileOnly: false }
+    }]
+  }
+}
+</code></pre>
+
+<h2 id="loaderoptionsplugin-context"><code>LoaderOptionsPlugin</code> context</h2>
+<p>Some loaders need context information and read them from the configuration. This needs to be passed via loader options in the long-term. See loader documentation for relevant options.</p>
+<p>To keep compatibility with old loaders, this information can be passed via plugin:</p>
+<pre><code class="diff">  plugins: [
++   new webpack.LoaderOptionsPlugin({
++     options: {
++       context: __dirname
++     }
++   })
+  ]
+</code></pre>
+
+<h2 id="debug"><code>debug</code></h2>
+<p>The <code>debug</code> option switched loaders to debug mode in webpack 1. This needs to be passed via loader options in long-term. See loader documentation for relevant options.</p>
+<p>The debug mode for loaders will be removed in webpack 3 or later.</p>
+<p>To keep compatibility with old loaders, loaders can be switched to debug mode via a plugin:</p>
+<pre><code class="diff">- debug: true,
+  plugins: [
++   new webpack.LoaderOptionsPlugin({
++     debug: true
++   })
+  ]
+</code></pre>
+
+<h2 id="code-splitting-with-es2015"><a name="user-content-code-splitting-with-es2015" href="#code-splitting-with-es2015" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Code Splitting with ES2015</h2>
+<p>In webpack 1, you could use <a href="/api/module-methods#require-ensure"><code>require.ensure()</code></a> as a method to lazily-load chunks for your application:</p>
+<pre><code class="javascript">require.ensure([], function(require) {
+  var foo = require(&quot;./module&quot;);
+});
+</code></pre>
+
+<p>The ES2015 Loader spec defines <a href="/api/module-methods#import-"><code>import()</code></a> as method to load ES2015 Modules dynamically on runtime. webpack treats <code>import()</code> as a split-point and puts the requested module in a separate chunk. <code>import()</code> takes the module name as argument and returns a Promise.</p>
+<pre><code class="js">function onClick() {
+  import(&quot;./module&quot;).then(module =&gt; {
+    return module.default;
+  }).catch(err =&gt; {
+    console.log(&quot;Chunk loading failed&quot;);
+  });
+}
+</code></pre>
+
+<p>Good news: Failure to load a chunk can now be handled because they are <code>Promise</code> based.</p>
+<h2 id="dynamic-expressions"><a name="user-content-dynamic-expressions" href="#dynamic-expressions" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Dynamic expressions</h2>
+<p>It&rsquo;s possible to pass a partial expression to <code>import()</code>. This is handled similar to expressions in CommonJS (webpack creates a <a href="https://webpack.github.io/docs/context.html">context</a> with all possible files).</p>
+<p><code>import()</code> creates a separate chunk for each possible module.</p>
+<pre><code class="js">function route(path, query) {
+  return import(`./routes/${path}/route`)
+    .then(route =&gt; new route.Route(query));
+}
+// This creates a separate chunk for each possible route
+</code></pre>
+
+<h2 id="mixing-es2015-with-amd-and-commonjs"><a name="user-content-mixing-es2015-with-amd-and-commonjs" href="#mixing-es2015-with-amd-and-commonjs" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Mixing ES2015 with AMD and CommonJS</h2>
+<p>As for AMD and CommonJS you can freely mix all three module types (even within the same file). webpack behaves similar to babel and node-eps in this case:</p>
+<pre><code class="javascript">// CommonJS consuming ES2015 Module
+var book = require(&quot;./book&quot;);
+
+book.currentPage;
+book.readPage();
+book.default === &quot;This is a book&quot;;
+</code></pre>
+
+<pre><code class="javascript">// ES2015 Module consuming CommonJS
+import fs from &quot;fs&quot;; // module.exports map to default
+import { readFileSync } from &quot;fs&quot;; // named exports are read from returned object+
+
+typeof fs.readFileSync === &quot;function&quot;;
+typeof readFileSync === &quot;function&quot;;
+</code></pre>
+
+<p>It is important to note that you will want to tell Babel to not parse these module symbols so webpack can use them. You can do this by setting the following in your <code>.babelrc</code> or <code>babel-loader</code> options.</p>
+<p><strong>.babelrc</strong></p>
+<pre><code class="json">{
+  &quot;presets&quot;: [
+    [&quot;es2015&quot;, { &quot;modules&quot;: false }]
+  ]
+}
+</code></pre>
+
+<h2 id="hints"><a name="user-content-hints" href="#hints" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hints</h2>
+<p>No need to change something, but opportunities</p>
+<h3 id="template-strings"><a name="user-content-template-strings" href="#template-strings" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Template strings</h3>
+<p>webpack now supports template strings in expressions. This means you can start using them in webpack constructs:</p>
+<pre><code class="diff">- require(&quot;./templates/&quot; + name);
++ require(`./templates/${name}`);
+</code></pre>
+
+<h3 id="configuration-promise"><a name="user-content-configuration-promise" href="#configuration-promise" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Configuration Promise</h3>
+<p>webpack now supports returning a <code>Promise</code> from the configuration file. This allows to do async processing in you configuration file.</p>
+<p><strong>webpack.config.js</strong></p>
+<pre><code class="js">module.exports = function() {
+  return fetchLangs().then(lang =&gt; ({
+    entry: &quot;...&quot;,
+    // ...
+    plugins: [
+      new DefinePlugin({ LANGUAGE: lang })
+    ]
+  }));
+};
+</code></pre>
+
+<h3 id="advanced-loader-matching"><a name="user-content-advanced-loader-matching" href="#advanced-loader-matching" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Advanced loader matching</h3>
+<p>webpack now supports more things to match on for loaders.</p>
+<pre><code class="js">module: {
+  rules: [
+    {
+      resource: /filename/, // matches &quot;/path/filename.js&quot;
+      resourceQuery: /^\?querystring$/, // matches &quot;?querystring&quot;
+      issuer: /filename/, // matches &quot;/path/something.js&quot; if requested from &quot;/path/filename.js&quot;
+    }
+  ]
+}
+</code></pre>
+
+<h3 id="more-cli-options"><a name="user-content-more-cli-options" href="#more-cli-options" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>More CLI options</h3>
+<p>There are some new CLI options for you to use:</p>
+<p><code>--define process.env.NODE_ENV="production"</code> See <a href="/plugins/define-plugin/"><code>DefinePlugin</code></a>.</p>
+<p><code>--display-depth</code> displays the distance to the entry point for each module.</p>
+<p><code>--display-used-exports</code> display info about which exports are used in a module.</p>
+<p><code>--display-max-modules</code> sets the number for modules displayed in the output (defaults to 15).</p>
+<p><code>-p</code> also defines <code>process.env.NODE_ENV</code> to <code>"production"</code> now.</p>
+<h2 id="loader-changes"><a name="user-content-loader-changes" href="#loader-changes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Loader changes</h2>
+<p>Changes only relevant for loader authors.</p>
+<h3 id="cacheable"><a name="user-content-cacheable" href="#cacheable" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Cacheable</h3>
+<p>Loaders are now cacheable by default. Loaders must opt-out if they are not cacheable.</p>
+<pre><code class="diff">  // Cacheable loader
+  module.exports = function(source) {
+-   this.cacheable();
+    return source;
+  }
+</code></pre>
+
+<pre><code class="diff">  // Not cacheable loader
+  module.exports = function(source) {
++   this.cacheable(false);
+    return source;
+  }
+</code></pre>
+
+<h3 id="complex-options"><a name="user-content-complex-options" href="#complex-options" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Complex options</h3>
+<p><strong>webpack 1</strong> only supports <code>JSON.stringify</code>-able options for loaders.</p>
+<p><strong>webpack 2</strong> now supports any JS object as loader options.</p>
+<p>Before webpack <a href="https://github.com/webpack/webpack/releases/tag/v2.2.1">2.2.1</a> (i.e. from 2.0.0 through 2.2.0), using complex options required using <code>ident</code> for the <code>options</code> object to allow its reference from other loaders. <strong>This was removed in 2.2.1</strong> and thus current migrations do not require any use of the <code>ident</code> key.</p>
+<pre><code class="diff">{
+  test: /\.ext/
+  use: {
+    loader: '...',
+    options: {
+-     ident: 'id',
+      fn: () =&gt; require('./foo.js')
+    }
+  }
+}
+</code></pre></article></body></html>
