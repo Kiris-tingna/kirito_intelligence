@@ -2,10 +2,10 @@
 '''
 @ Author: Tinkle G
 '''
-from settings import *
-import NameRecognizer
-import BiLSTM
-from HeterogeneousNetwork import pathsim
+from utils.settings import *
+import utils.NameRecognizer
+import utils.BiLSTM
+from utils.HeterogeneousNetwork import pathsim
 
 def getschedule(x):
     if x.month<=3:
