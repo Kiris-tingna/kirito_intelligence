@@ -30,7 +30,7 @@ def getname_act():
                     tmp = re.sub("\'", '', tmp)
                     tmp = re.sub('\xa0','',tmp)
                     tmp = tmp.split(',')
-                    for i in range(len(tmp) / 2):
+                    for i in range(len(tmp) // 2):
                         ret.append(tmp[2 * i + 1])
 
                     if line.split('|')[4]!='无':
