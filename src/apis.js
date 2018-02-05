@@ -8,7 +8,7 @@ axios.defaults.timeout = 5000;
 // let gst = 'http://192.168.1.116:8080/api'
 
 // api base uri for local server
-let base = 'http://180.209.64.49:4000/api';
+let lcy = 'http://180.209.64.49:4000/api';
 let gst = 'http://180.209.64.49:8080/api';
 
 export const gethin = params => { return axios.get(`${lcy}/hin`, { params: params }) }
